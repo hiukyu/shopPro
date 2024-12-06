@@ -30,6 +30,8 @@ public class SampleController {
         model.addAttribute("calist", categoryService.list());
 
         model.addAttribute("boardDTOList", boardCaService.list(boardCaDTO));
+        
+        log.info("변경내용임 깃확인용 로그");
 
         //자유게시판
         boardCaDTO.setCaid(1L);
